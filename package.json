@@ -1,0 +1,38 @@
+{
+    "name": "url-core",
+    "private": true,
+    "engines": {
+        "node": "10.X"
+    },
+    "scripts": {
+        "build": "mkdir dist -p && rm -r dist && tsc",
+        "start": "node -r ts-node/register src/index.ts",
+        "debug": "node --inspect-brk -r ts-node/register src/index.ts",
+        "db": "docker run --rm -i -t -e POSTGRES_DB=test -e POSTGRES_PASSWORD=alpine -p 127.0.0.1:5432:5432 postgres"
+    },
+    "dependencies": {
+        "@koa/cors": "^3.0.0",
+        "@radoslaw-medryk/tslint": "^0.1.7",
+        "@types/koa": "^2.0.48",
+        "@types/koa-router": "^7.0.40",
+        "@types/koa__cors": "^2.2.3",
+        "@types/module-alias": "^2.0.0",
+        "@types/node": "^11.9.5",
+        "@types/slonik": "^15.4.0",
+        "koa": "^2.7.0",
+        "koa-body": "^4.1.0",
+        "koa-combine-routers": "^4.0.2",
+        "koa-router": "^7.4.0",
+        "module-alias": "^2.2.0",
+        "node": "^11.10.0",
+        "pg": "^7.8.1",
+        "pg-promise": "^8.6.3",
+        "slonik": "^16.10.0",
+        "tslint": "^5.13.0",
+        "typescript": "^3.3.3333"
+    },
+    "devDependencies": {
+        "prettier": "^1.16.4",
+        "ts-node": "^8.0.2"
+    }
+}
