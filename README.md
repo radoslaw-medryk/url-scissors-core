@@ -27,3 +27,4 @@ Live version is deployed at: https://url-scissors.firebaseapp.com/
 - clone this repo: https://github.com/radoslaw-medryk/url-scissors-app
 - `npm install`
 - `npm run start`
+- visit `http://localhost:8080/`
